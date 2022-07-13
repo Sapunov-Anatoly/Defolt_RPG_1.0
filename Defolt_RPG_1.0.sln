@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Defolt_RPG_1.0", "Defolt_RPG_1.0\Defolt_RPG_1.0.csproj", "{AC69328D-9E29-4BF9-8A6C-8EA63B2759BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC69328D-9E29-4BF9-8A6C-8EA63B2759BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC69328D-9E29-4BF9-8A6C-8EA63B2759BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC69328D-9E29-4BF9-8A6C-8EA63B2759BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC69328D-9E29-4BF9-8A6C-8EA63B2759BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BAD9E34D-A8D2-4021-BD30-1769F970C083}
+	EndGlobalSection
+EndGlobal
