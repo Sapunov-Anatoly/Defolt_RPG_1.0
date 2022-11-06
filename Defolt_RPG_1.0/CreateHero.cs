@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 
@@ -13,76 +7,84 @@ namespace Defolt_RPG_1._0
 {
     public partial class CreateHero : Form
     {
+        private int level = 1;
+        private int exp = 0;
+        private int skillPoints = 0;
+        private int powerPoints;
+        private int protectionPoints;
+        private int endurancePoints;
+        private int inntelligencePoints;
+        private int luckPoints;
+        private int critChancePoints;
+        public int healthPoints;
+        public int manaPoints;
+        public int staminaPoints;
+        public string wanted_path = Environment.CurrentDirectory.ToString(); // Поиск пути до исполняемого файла
+        private string classHero;
+
         public CreateHero()
         {
             InitializeComponent();
 
-            string wanted_path = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..\\..\\..\\")); // Поиск пути до корневой папки
-            textBoxDescription.Text = File.ReadAllText(wanted_path + "\\Text\\WarriorDescription.txt");
+            string wanted_path = Environment.CurrentDirectory.ToString() + "\\Text\\WarriorDescription.txt";
+            textBoxDescription.Text = File.ReadAllText(wanted_path);
 
-            var Stats = Defolt_RPG_1._0.Heroes.GetWarriorStats();
-            labelPowePoints.Text = Stats.Power.ToString();
-            labelProtectionPoints.Text = Stats.Protection.ToString();
-            labelEndurancePoints.Text = Stats.Endurance.ToString();
-            labelInntelligencePoints.Text = Stats.Inntelligence.ToString();
-            labelLuckPoints.Text = Stats.Luck.ToString();
-            labelCritChancePoints.Text = Stats.CritChance.ToString();
+            Heroes.ClassStats Stats = Heroes.GetWarriorStats();
+            CreateHeroOptions(Stats);
         }
-        public string wanted_path = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..\\..\\..\\")); // Поиск пути до корневой папки
-        public int HealthPoints = 10;
-        public int ManaPoints = 10;
-        public int StaminaPoints = 10;
 
         private void buttonEntryWarrior_Click(object sender, EventArgs e)
         {
-            textBoxDescription.Text = File.ReadAllText(wanted_path + "\\Text\\WarriorDescription.txt"); 
+            textBoxDescription.Text = File.ReadAllText(wanted_path + "\\Text\\WarriorDescription.txt");
 
-            var Stats = Defolt_RPG_1._0.Heroes.GetWarriorStats();
-            labelPowePoints.Text = Stats.Power.ToString();
-            labelProtectionPoints.Text = Stats.Protection.ToString();
-            labelEndurancePoints.Text = Stats.Endurance.ToString();
-            labelInntelligencePoints.Text = Stats.Inntelligence.ToString();
-            labelLuckPoints.Text = Stats.Luck.ToString();
-            labelCritChancePoints.Text = Stats.CritChance.ToString();
+            Heroes.ClassStats Stats = Heroes.GetWarriorStats();
+            CreateHeroOptions(Stats);
         }
 
         private void buttonEntryMage_Click(object sender, EventArgs e)
         {
             textBoxDescription.Text = File.ReadAllText(wanted_path + "\\Text\\MageDescription.txt");
 
-            var Stats = Defolt_RPG_1._0.Heroes.GetMageStats();
-            labelPowePoints.Text = Stats.Power.ToString();
-            labelProtectionPoints.Text = Stats.Protection.ToString();
-            labelEndurancePoints.Text = Stats.Endurance.ToString();
-            labelInntelligencePoints.Text = Stats.Inntelligence.ToString();
-            labelLuckPoints.Text = Stats.Luck.ToString();
-            labelCritChancePoints.Text = Stats.CritChance.ToString();
+            Heroes.ClassStats Stats = Heroes.GetMageStats();
+            CreateHeroOptions(Stats);
         }
 
         private void buttonEntryArcher_Click(object sender, EventArgs e)
         {
             textBoxDescription.Text = File.ReadAllText(wanted_path + "\\Text\\ArcherDescription.txt");
 
-            var Stats = Defolt_RPG_1._0.Heroes.GetArcherStats();
-            labelPowePoints.Text = Stats.Power.ToString();
-            labelProtectionPoints.Text = Stats.Protection.ToString();
-            labelEndurancePoints.Text = Stats.Endurance.ToString();
-            labelInntelligencePoints.Text = Stats.Inntelligence.ToString();
-            labelLuckPoints.Text = Stats.Luck.ToString();
-            labelCritChancePoints.Text = Stats.CritChance.ToString();
+            Heroes.ClassStats Stats = Heroes.GetArcherStats();
+            CreateHeroOptions(Stats);
         }
 
         private void buttonEntryThief_Click(object sender, EventArgs e)
         {
             textBoxDescription.Text = File.ReadAllText(wanted_path + "\\Text\\ThiefDescription.txt");
 
-            var Stats = Defolt_RPG_1._0.Heroes.GetThiefStats();
-            labelPowePoints.Text = Stats.Power.ToString();
-            labelProtectionPoints.Text = Stats.Protection.ToString();
-            labelEndurancePoints.Text = Stats.Endurance.ToString();
-            labelInntelligencePoints.Text = Stats.Inntelligence.ToString();
-            labelLuckPoints.Text = Stats.Luck.ToString();
-            labelCritChancePoints.Text = Stats.CritChance.ToString();
+            Heroes.ClassStats Stats = Heroes.GetThiefStats();
+            CreateHeroOptions(Stats);
+        }
+
+        private void CreateHeroOptions(Heroes.ClassStats Stats)
+        {
+            labelPowerPoints.Text = Stats.power.ToString();
+            labelProtectionPoints.Text = Stats.protection.ToString();
+            labelEndurancePoints.Text = Stats.endurance.ToString();
+            labelInntelligencePoints.Text = Stats.inntelligence.ToString();
+            labelLuckPoints.Text = Stats.luck.ToString();
+            labelCritChancePoints.Text = Stats.critChance.ToString();
+
+            classHero = Stats.classHero;
+            powerPoints = Stats.power;
+            protectionPoints = Stats.protection;
+            endurancePoints = Stats.endurance;
+            inntelligencePoints = Stats.inntelligence;
+            luckPoints = Stats.luck;
+            critChancePoints = Stats.critChance;
+
+            healthPoints = Stats.healthPoints;
+            manaPoints = Stats.manaPoints;
+            staminaPoints = Stats.staminaPoints;
         }
 
         private void textBoxName_Enter(object sender, EventArgs e)
@@ -95,19 +97,49 @@ namespace Defolt_RPG_1._0
         }
         private void textBoxName_Leave(object sender, EventArgs e)
         {
+            if (textBoxName.Text == "")
+            {
                 textBoxName.Text = "Ввести имя";
                 textBoxName.ForeColor = Color.Gray;
+            }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonCreateHeroGoToGame_Click(object sender, EventArgs e)
         {
-            GameProcess gameProcess = new GameProcess();
-            gameProcess.Show();
-            this.Close();
+            if (textBoxName.Text == "" || textBoxName.Text == "Ввести имя")
+            {
+                MessageBox.Show("Введите имя персонажа", 
+                                "Ошибка",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+            }
+            else
+            {
+                GameProcess gameProcess = new GameProcess(this.textBoxName.Text,
+                                                          this.classHero,
+                                                          this.powerPoints,
+                                                          this.protectionPoints,
+                                                          this.endurancePoints,
+                                                          this.inntelligencePoints,
+                                                          this.luckPoints,
+                                                          this.critChancePoints,
+                                                          this.healthPoints,
+                                                          this.manaPoints,
+                                                          this.staminaPoints,
+                                                          level, 
+                                                          exp,
+                                                          skillPoints);
+                gameProcess.Show();
+                this.Hide();
+            }
         }
 
-        private void CreateHero_FormClosed(object sender, FormClosedEventArgs e)
+        private void textBoxName_KeyUp(object sender, KeyEventArgs e)
         {
+            if (e.KeyCode == Keys.Enter)
+            {
+                buttonCreateHeroGoToGame_Click(sender, e);
+            }
         }
     }
 }

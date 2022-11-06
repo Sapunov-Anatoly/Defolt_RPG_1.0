@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Defolt_RPG_1._0
@@ -20,8 +13,14 @@ namespace Defolt_RPG_1._0
         private void buttonStartNewGame_Click(object sender, EventArgs e)
         {
             CreateHero createhero = new CreateHero();
-            this.Hide();
-            createhero.Show();
+            createhero.ShowDialog();
+        }
+
+        private void buttonLoadGame_Click(object sender, EventArgs e)
+        {
+            LoadHero loadhero = new LoadHero();
+
+            loadhero.ShowDialog();
         }
     }
 }

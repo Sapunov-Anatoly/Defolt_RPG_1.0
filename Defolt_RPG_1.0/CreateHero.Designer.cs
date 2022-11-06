@@ -46,16 +46,16 @@ namespace Defolt_RPG_1._0
             this.labelLuck = new System.Windows.Forms.Label();
             this.labelCritChance = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.labelPowePoints = new System.Windows.Forms.Label();
-            this.labelProtectionPoints = new System.Windows.Forms.Label();
-            this.labelEndurancePoints = new System.Windows.Forms.Label();
-            this.labelInntelligencePoints = new System.Windows.Forms.Label();
-            this.labelLuckPoints = new System.Windows.Forms.Label();
             this.labelCritChancePoints = new System.Windows.Forms.Label();
+            this.labelLuckPoints = new System.Windows.Forms.Label();
+            this.labelInntelligencePoints = new System.Windows.Forms.Label();
+            this.labelEndurancePoints = new System.Windows.Forms.Label();
+            this.labelProtectionPoints = new System.Windows.Forms.Label();
+            this.labelPowerPoints = new System.Windows.Forms.Label();
             this.groupBoxDescription = new System.Windows.Forms.GroupBox();
-            this.textBoxDescription = new System.Windows.Forms.TextBox();
             this.textBoxDescriptionTitle = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.textBoxDescription = new System.Windows.Forms.TextBox();
+            this.buttonCreateHeroGoToGame = new System.Windows.Forms.Button();
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.groupBoxComplete = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
@@ -214,7 +214,7 @@ namespace Defolt_RPG_1._0
             this.groupBox1.Controls.Add(this.labelInntelligencePoints);
             this.groupBox1.Controls.Add(this.labelEndurancePoints);
             this.groupBox1.Controls.Add(this.labelProtectionPoints);
-            this.groupBox1.Controls.Add(this.labelPowePoints);
+            this.groupBox1.Controls.Add(this.labelPowerPoints);
             this.groupBox1.Controls.Add(this.buttonEntryWarrior);
             this.groupBox1.Controls.Add(this.labelCritChance);
             this.groupBox1.Controls.Add(this.labelLuck);
@@ -236,41 +236,14 @@ namespace Defolt_RPG_1._0
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
             // 
-            // labelPowePoints
+            // labelCritChancePoints
             // 
-            this.labelPowePoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelPowePoints.Location = new System.Drawing.Point(360, 256);
-            this.labelPowePoints.Name = "labelPowePoints";
-            this.labelPowePoints.Size = new System.Drawing.Size(56, 23);
-            this.labelPowePoints.TabIndex = 16;
-            this.labelPowePoints.Text = "0";
-            // 
-            // labelProtectionPoints
-            // 
-            this.labelProtectionPoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelProtectionPoints.Location = new System.Drawing.Point(360, 290);
-            this.labelProtectionPoints.Name = "labelProtectionPoints";
-            this.labelProtectionPoints.Size = new System.Drawing.Size(56, 23);
-            this.labelProtectionPoints.TabIndex = 17;
-            this.labelProtectionPoints.Text = "0";
-            // 
-            // labelEndurancePoints
-            // 
-            this.labelEndurancePoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelEndurancePoints.Location = new System.Drawing.Point(360, 322);
-            this.labelEndurancePoints.Name = "labelEndurancePoints";
-            this.labelEndurancePoints.Size = new System.Drawing.Size(56, 23);
-            this.labelEndurancePoints.TabIndex = 18;
-            this.labelEndurancePoints.Text = "0";
-            // 
-            // labelInntelligencePoints
-            // 
-            this.labelInntelligencePoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelInntelligencePoints.Location = new System.Drawing.Point(360, 354);
-            this.labelInntelligencePoints.Name = "labelInntelligencePoints";
-            this.labelInntelligencePoints.Size = new System.Drawing.Size(56, 23);
-            this.labelInntelligencePoints.TabIndex = 19;
-            this.labelInntelligencePoints.Text = "0";
+            this.labelCritChancePoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelCritChancePoints.Location = new System.Drawing.Point(360, 417);
+            this.labelCritChancePoints.Name = "labelCritChancePoints";
+            this.labelCritChancePoints.Size = new System.Drawing.Size(56, 23);
+            this.labelCritChancePoints.TabIndex = 21;
+            this.labelCritChancePoints.Text = "0";
             // 
             // labelLuckPoints
             // 
@@ -281,14 +254,41 @@ namespace Defolt_RPG_1._0
             this.labelLuckPoints.TabIndex = 20;
             this.labelLuckPoints.Text = "0";
             // 
-            // labelCritChancePoints
+            // labelInntelligencePoints
             // 
-            this.labelCritChancePoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelCritChancePoints.Location = new System.Drawing.Point(360, 417);
-            this.labelCritChancePoints.Name = "labelCritChancePoints";
-            this.labelCritChancePoints.Size = new System.Drawing.Size(56, 23);
-            this.labelCritChancePoints.TabIndex = 21;
-            this.labelCritChancePoints.Text = "0";
+            this.labelInntelligencePoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelInntelligencePoints.Location = new System.Drawing.Point(360, 354);
+            this.labelInntelligencePoints.Name = "labelInntelligencePoints";
+            this.labelInntelligencePoints.Size = new System.Drawing.Size(56, 23);
+            this.labelInntelligencePoints.TabIndex = 19;
+            this.labelInntelligencePoints.Text = "0";
+            // 
+            // labelEndurancePoints
+            // 
+            this.labelEndurancePoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelEndurancePoints.Location = new System.Drawing.Point(360, 322);
+            this.labelEndurancePoints.Name = "labelEndurancePoints";
+            this.labelEndurancePoints.Size = new System.Drawing.Size(56, 23);
+            this.labelEndurancePoints.TabIndex = 18;
+            this.labelEndurancePoints.Text = "0";
+            // 
+            // labelProtectionPoints
+            // 
+            this.labelProtectionPoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelProtectionPoints.Location = new System.Drawing.Point(360, 290);
+            this.labelProtectionPoints.Name = "labelProtectionPoints";
+            this.labelProtectionPoints.Size = new System.Drawing.Size(56, 23);
+            this.labelProtectionPoints.TabIndex = 17;
+            this.labelProtectionPoints.Text = "0";
+            // 
+            // labelPowerPoints
+            // 
+            this.labelPowerPoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelPowerPoints.Location = new System.Drawing.Point(360, 256);
+            this.labelPowerPoints.Name = "labelPowerPoints";
+            this.labelPowerPoints.Size = new System.Drawing.Size(56, 23);
+            this.labelPowerPoints.TabIndex = 16;
+            this.labelPowerPoints.Text = "0";
             // 
             // groupBoxDescription
             // 
@@ -299,17 +299,6 @@ namespace Defolt_RPG_1._0
             this.groupBoxDescription.Size = new System.Drawing.Size(431, 345);
             this.groupBoxDescription.TabIndex = 17;
             this.groupBoxDescription.TabStop = false;
-            // 
-            // textBoxDescription
-            // 
-            this.textBoxDescription.BackColor = System.Drawing.SystemColors.Control;
-            this.textBoxDescription.Font = new System.Drawing.Font("Harlow Solid Italic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxDescription.Location = new System.Drawing.Point(6, 47);
-            this.textBoxDescription.Multiline = true;
-            this.textBoxDescription.Name = "textBoxDescription";
-            this.textBoxDescription.ReadOnly = true;
-            this.textBoxDescription.Size = new System.Drawing.Size(419, 298);
-            this.textBoxDescription.TabIndex = 0;
             // 
             // textBoxDescriptionTitle
             // 
@@ -324,19 +313,31 @@ namespace Defolt_RPG_1._0
             this.textBoxDescriptionTitle.Text = "Описание";
             this.textBoxDescriptionTitle.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button1
+            // textBoxDescription
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(207, 19);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(212, 75);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "Создать";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.textBoxDescription.BackColor = System.Drawing.SystemColors.Control;
+            this.textBoxDescription.Font = new System.Drawing.Font("Firstfont", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxDescription.Location = new System.Drawing.Point(6, 47);
+            this.textBoxDescription.Multiline = true;
+            this.textBoxDescription.Name = "textBoxDescription";
+            this.textBoxDescription.ReadOnly = true;
+            this.textBoxDescription.Size = new System.Drawing.Size(419, 298);
+            this.textBoxDescription.TabIndex = 0;
+            // 
+            // buttonCreateHeroGoToGame
+            // 
+            this.buttonCreateHeroGoToGame.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonCreateHeroGoToGame.Location = new System.Drawing.Point(207, 19);
+            this.buttonCreateHeroGoToGame.Name = "buttonCreateHeroGoToGame";
+            this.buttonCreateHeroGoToGame.Size = new System.Drawing.Size(212, 75);
+            this.buttonCreateHeroGoToGame.TabIndex = 18;
+            this.buttonCreateHeroGoToGame.Text = "Создать";
+            this.buttonCreateHeroGoToGame.UseVisualStyleBackColor = true;
+            this.buttonCreateHeroGoToGame.Click += new System.EventHandler(this.buttonCreateHeroGoToGame_Click);
             // 
             // textBoxName
             // 
+            this.textBoxName.AcceptsReturn = true;
             this.textBoxName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxName.ForeColor = System.Drawing.Color.Gray;
             this.textBoxName.Location = new System.Drawing.Point(16, 52);
@@ -347,12 +348,13 @@ namespace Defolt_RPG_1._0
             this.textBoxName.Text = "Ввести имя";
             this.textBoxName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBoxName.Enter += new System.EventHandler(this.textBoxName_Enter);
+            this.textBoxName.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxName_KeyUp);
             this.textBoxName.Leave += new System.EventHandler(this.textBoxName_Leave);
             // 
             // groupBoxComplete
             // 
             this.groupBoxComplete.Controls.Add(this.textBoxName);
-            this.groupBoxComplete.Controls.Add(this.button1);
+            this.groupBoxComplete.Controls.Add(this.buttonCreateHeroGoToGame);
             this.groupBoxComplete.Location = new System.Drawing.Point(440, 355);
             this.groupBoxComplete.Name = "groupBoxComplete";
             this.groupBoxComplete.Size = new System.Drawing.Size(425, 101);
@@ -371,7 +373,6 @@ namespace Defolt_RPG_1._0
             this.Name = "CreateHero";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ничем не выдающаяся РПГ игра про героя-одиночку";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.CreateHero_FormClosed);
             this.groupBox1.ResumeLayout(false);
             this.groupBoxDescription.ResumeLayout(false);
             this.groupBoxDescription.PerformLayout();
@@ -403,11 +404,11 @@ namespace Defolt_RPG_1._0
         private System.Windows.Forms.Label labelInntelligencePoints;
         private System.Windows.Forms.Label labelEndurancePoints;
         private System.Windows.Forms.Label labelProtectionPoints;
-        private System.Windows.Forms.Label labelPowePoints;
+        private System.Windows.Forms.Label labelPowerPoints;
         private System.Windows.Forms.GroupBox groupBoxDescription;
         private System.Windows.Forms.TextBox textBoxDescriptionTitle;
         private System.Windows.Forms.TextBox textBoxDescription;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonCreateHeroGoToGame;
         private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.GroupBox groupBoxComplete;
     }
