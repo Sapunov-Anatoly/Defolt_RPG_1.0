@@ -1,0 +1,50 @@
+C:\Users\sanov\source\repos\Defolt_RPG_1.0\Defolt_RPG_1.0\bin\Debug\Defolt_RPG_1.0.exe.config
+C:\Users\sanov\source\repos\Defolt_RPG_1.0\Defolt_RPG_1.0\bin\Debug\Defolt_RPG_1.0.exe
+C:\Users\sanov\source\repos\Defolt_RPG_1.0\Defolt_RPG_1.0\bin\Debug\Defolt_RPG_1.0.pdb
+C:\Users\sanov\source\repos\Defolt_RPG_1.0\Defolt_RPG_1.0\obj\Debug\Defolt_RPG_1.0.csprojAssemblyReference.cache
+C:\Users\sanov\source\repos\Defolt_RPG_1.0\Defolt_RPG_1.0\obj\Debug\Defolt_RPG_1._0.Properties.Resources.resources
+C:\Users\sanov\source\repos\Defolt_RPG_1.0\Defolt_RPG_1.0\obj\Debug\Defolt_RPG_1.0.csproj.GenerateResource.cache
+C:\Users\sanov\source\repos\Defolt_RPG_1.0\Defolt_RPG_1.0\obj\Debug\Defolt_RPG_1.0.csproj.CoreCompileInputs.cache
+C:\Users\sanov\source\repos\Defolt_RPG_1.0\Defolt_RPG_1.0\obj\Debug\Defolt_RPG_1.0.exe
+C:\Users\sanov\source\repos\Defolt_RPG_1.0\Defolt_RPG_1.0\obj\Debug\Defolt_RPG_1.0.pdb
+C:\Users\sanov\source\repos\Defolt_RPG_1.0\Defolt_RPG_1.0\obj\Debug\Defolt_RPG_1._0.MainMenu.resources
+C:\Users\sanov\source\repos\Defolt_RPG_1.0\Defolt_RPG_1.0\obj\Debug\Defolt_RPG_1._0.GameProcess.resources
+C:\Users\sanov\source\repos\Defolt_RPG_1.0\Defolt_RPG_1.0\obj\Debug\Defolt_RPG_1._0.CreateHero.resources
+C:\Users\sanov\source\repos\Defolt_RPG_1.0\Defolt_RPG_1.0\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\sanov\source\repos\Defolt_RPG_1.0\Defolt_RPG_1.0\bin\Debug\Newtonsoft.Json.dll
+C:\Users\sanov\source\repos\Defolt_RPG_1.0\Defolt_RPG_1.0\bin\Debug\System.Buffers.dll
+C:\Users\sanov\source\repos\Defolt_RPG_1.0\Defolt_RPG_1.0\bin\Debug\System.Memory.dll
+C:\Users\sanov\source\repos\Defolt_RPG_1.0\Defolt_RPG_1.0\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\sanov\source\repos\Defolt_RPG_1.0\Defolt_RPG_1.0\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\sanov\source\repos\Defolt_RPG_1.0\Defolt_RPG_1.0\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\sanov\source\repos\Defolt_RPG_1.0\Defolt_RPG_1.0\bin\Debug\System.Text.Json.dll
+C:\Users\sanov\source\repos\Defolt_RPG_1.0\Defolt_RPG_1.0\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\sanov\source\repos\Defolt_RPG_1.0\Defolt_RPG_1.0\bin\Debug\System.ValueTuple.dll
+C:\Users\sanov\source\repos\Defolt_RPG_1.0\Defolt_RPG_1.0\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\sanov\source\repos\Defolt_RPG_1.0\Defolt_RPG_1.0\bin\Debug\Newtonsoft.Json.xml
+C:\Users\sanov\source\repos\Defolt_RPG_1.0\Defolt_RPG_1.0\bin\Debug\System.Buffers.xml
+C:\Users\sanov\source\repos\Defolt_RPG_1.0\Defolt_RPG_1.0\bin\Debug\System.Memory.xml
+C:\Users\sanov\source\repos\Defolt_RPG_1.0\Defolt_RPG_1.0\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\sanov\source\repos\Defolt_RPG_1.0\Defolt_RPG_1.0\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\sanov\source\repos\Defolt_RPG_1.0\Defolt_RPG_1.0\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\sanov\source\repos\Defolt_RPG_1.0\Defolt_RPG_1.0\bin\Debug\System.Text.Json.xml
+C:\Users\sanov\source\repos\Defolt_RPG_1.0\Defolt_RPG_1.0\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\sanov\source\repos\Defolt_RPG_1.0\Defolt_RPG_1.0\bin\Debug\System.ValueTuple.xml
+C:\Users\sanov\source\repos\Defolt_RPG_1.0\Defolt_RPG_1.0\obj\Debug\Defolt_RPG_1.0.csproj.CopyComplete
+D:\GameDev and Programming\.NET Framework\Defolt_RPG_1.0\Defolt_RPG_1.0\bin\Debug\Defolt_RPG_1.0.exe.config
+D:\GameDev and Programming\.NET Framework\Defolt_RPG_1.0\Defolt_RPG_1.0\bin\Debug\Defolt_RPG_1.0.exe
+D:\GameDev and Programming\.NET Framework\Defolt_RPG_1.0\Defolt_RPG_1.0\bin\Debug\Defolt_RPG_1.0.pdb
+D:\GameDev and Programming\.NET Framework\Defolt_RPG_1.0\Defolt_RPG_1.0\bin\Debug\Newtonsoft.Json.dll
+D:\GameDev and Programming\.NET Framework\Defolt_RPG_1.0\Defolt_RPG_1.0\bin\Debug\Newtonsoft.Json.xml
+D:\GameDev and Programming\.NET Framework\Defolt_RPG_1.0\Defolt_RPG_1.0\obj\Debug\Defolt_RPG_1._0.CreateHero.resources
+D:\GameDev and Programming\.NET Framework\Defolt_RPG_1.0\Defolt_RPG_1.0\obj\Debug\Defolt_RPG_1._0.MainMenu.resources
+D:\GameDev and Programming\.NET Framework\Defolt_RPG_1.0\Defolt_RPG_1.0\obj\Debug\Defolt_RPG_1._0.GameProcess.resources
+D:\GameDev and Programming\.NET Framework\Defolt_RPG_1.0\Defolt_RPG_1.0\obj\Debug\Defolt_RPG_1._0.Properties.Resources.resources
+D:\GameDev and Programming\.NET Framework\Defolt_RPG_1.0\Defolt_RPG_1.0\obj\Debug\Defolt_RPG_1.0.csproj.GenerateResource.cache
+D:\GameDev and Programming\.NET Framework\Defolt_RPG_1.0\Defolt_RPG_1.0\obj\Debug\Defolt_RPG_1.0.csproj.CoreCompileInputs.cache
+D:\GameDev and Programming\.NET Framework\Defolt_RPG_1.0\Defolt_RPG_1.0\obj\Debug\Defolt_RPG_1.0.csproj.CopyComplete
+D:\GameDev and Programming\.NET Framework\Defolt_RPG_1.0\Defolt_RPG_1.0\obj\Debug\Defolt_RPG_1.0.exe
+D:\GameDev and Programming\.NET Framework\Defolt_RPG_1.0\Defolt_RPG_1.0\obj\Debug\Defolt_RPG_1.0.pdb
+D:\GameDev and Programming\.NET Framework\Defolt_RPG_1.0\Defolt_RPG_1.0\obj\Debug\Defolt_RPG_1._0.LoadHero.resources
+D:\GameDev and Programming\.NET Framework\Defolt_RPG_1.0\Defolt_RPG_1.0\obj\Debug\Defolt_RPG_1.0.csproj.AssemblyReference.cache
+D:\GameDev and Programming\.NET Framework\Defolt_RPG_1.0\Defolt_RPG_1.0\obj\Debug\Defolt_RPG_1.0.csproj.SuggestedBindingRedirects.cache
