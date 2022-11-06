@@ -1,0 +1,20 @@
+{
+  "heroOptions": [
+    {
+      "healthPoints": 100,
+      "manaPoints": 60,
+      "staminaPoints": 150,
+      "exp": 0,
+      "level": 5,
+      "skillPoints": 7,
+      "NameHero": "CodyLV",
+      "classHero": "A",
+      "powerPoints": 11,
+      "protectionPoints": 6,
+      "endurancePoints": 15,
+      "inntelligencePoints": 5,
+      "luckPoints": 7,
+      "critChancePoints": 7
+    }
+  ]
+}
